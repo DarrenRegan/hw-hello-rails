@@ -53,4 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+    Rails.application.routes.draw do
+    resources :movies
+    root :to => redirect('/movies')
+    end
 end
